@@ -1,4 +1,4 @@
-name: recommendationsvc pipeline
+name: recommendationservice cicd pipeline
 
 on:
   pull_request:
@@ -140,7 +140,7 @@ jobs:
             -Dsonar.projectKey=OjoOluwagbenga700_recommendationservice
             -Dsonar.organization=${{ env.SONAR_ORGANIZATION }}
             -Dsonar.sources=.
-            -Dsonar.exclusions= .venv/**,__pycache__/**,**/__pycache__/**,*.pyc
+            -Dsonar.exclusions=.venv/**,__pycache__/**
 
   package:
     runs-on: ubuntu-latest
